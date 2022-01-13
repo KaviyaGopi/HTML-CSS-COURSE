@@ -1,35 +1,78 @@
+/*List selector */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 h1 {
   color: blue;
   font-size: 26px;
-  font-family: sans-serif;
   text-decoration: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
 }
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
 }
 
 h4 {
   font-size: 20px;
-  font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
   font-size: 22px;
-  font-family: sans-serif;
   line-height: 1.5;
 }
 
 li {
-  font-family: sans-serif;
   font-size: 20px;
+}
+
+/* descendant selector */
+footer p {
+  font-size: 16px;
+}
+
+header p {
+  font-style: italic;
+}
+
+article header p {
+  font-style: italic;
+}
+
+/* Class and ID Selectors */
+
+/* ID Selectors : it can be used only once */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* Class Selectors : if we need to use the id names for multiple times , we use class method */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
 }

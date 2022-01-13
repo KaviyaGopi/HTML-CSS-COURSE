@@ -27,6 +27,8 @@
         <a href="#">Flexbox</a>
         <a href="#">CSS</a>
       </nav>
+
+      <p>Test pragraph</p>
     </header>
 
     <article>
@@ -39,7 +41,9 @@
           height="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -109,25 +113,27 @@
 
     <aside>
       <h4>Related Post</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="img/related-1.jpg" alt="Related 1" width="75" height="75" />
           <a href="#">How to learn Web Developement</a>
-          <p>By Jones schmedtman</p>
+          <p class="related-author">By Jones schmedtman</p>
         </li>
         <li>
           <img src="img/related-2.jpg" alt="Related 2" width="75" height="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img src="img/related-3.jpg" alt="Related 3" width="75" height="75" />
           <a href="#">Why javascript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by the code Magazine .</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by the code Magazine .</p>
+    </footer>
   </body>
 </html>
