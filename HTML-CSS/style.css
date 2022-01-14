@@ -6,6 +6,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -76,3 +83,136 @@ article header p {
 .related {
   list-style: none;
 }
+
+/* 
+Working with colors 
+RGB Model : Every color can be represented by a combination of RED , GREEN and BLUE
+Each of the 3 base colors can take a value between 0 and 255 . which leads to 16.8 millon different colors 
+
+Defining colors in CSS
+1.RGB/RGBA NOTATION
+Regular RGBmodel 
+rgb(0,255,255)
+
+RGB with Transparency("alpha")
+rgba(0,255,255,0.3)
+
+2.HEXADECIMAL NOTATION
+Instead of using a scal from 0 to 255 , we go from 0 to ff (255 in hexadecimal number)
+#00ffff
+Shorthand , when all colors are identical pairs 
+#0ff
+
+In practice , we mostly use hexadecimal colors , and rgba when we need transparency
+
+When colors in all 3 channels are the same , we get a grey color 
+there are 256 pure grays to choose from 
+rgb(69,69,69) / #444444 / #444
+rgb(183,183,183) / #b7b7b7
+*/
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+body {
+  /* background-color: bisque; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* Pseudo Class : in the below code it will select all the li element of that are the first child elements of it's parent element */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  /* color: red; */
+}
+
+/* Pseudo classes using descendant selector 
+   Misconception: This wont work 
+*/
+article p:first-child {
+  color: red;
+}
+
+/* how to style Pseudo class using hyperlinks 
+   Styling links 
+*/
+
+/* the following four way is alwasy listed in this way "LVHA" (list , visited , hover , active */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* CONFLICTING SELECTORS AND DECLARATIONS 
+
+<p id="author-text" class="author">
+  posted by laura jones on monday , june 21st 2017
+</p>
+
+- There are multiple selectors selecting the same element . Which of them applies ?
+- All of them . All rules and properties are applied!
+- But there are conflicting font-size declarations! Is it 18px , or 20px , or 22px ?
+
+.author{
+  font-style : italic;
+  font-size: 18px;
+}
+
+#author-text{
+  font-size:20px;
+}
+
+p,li{
+  font-family: sans-serif;
+  color: #444444;
+  font-size: 22px;
+}
+
+
+RESOLVING CONFLICTING DECLARATION
+
+-lowest Priority to Highest priority 
+- The highest priority for now is 
+
+-Declaration marked ! 
+- Inline style (style attribute in HTML) is the most highest priority , but we don't use that 
+1 - ID (#) selector 
+  - if there's any ID selector then that is the rule going to apply  , if there are multiple ID selector then the last selector in code applies 
+2 - The next higest priority is 
+    Class (.) or pseudo-class (:) selector
+3 - Element selector (p,div,li,etc.)
+4 - Universal Selector (*)
+
+
+*/
