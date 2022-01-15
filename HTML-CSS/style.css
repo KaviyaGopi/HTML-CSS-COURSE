@@ -1,14 +1,17 @@
-/*List selector */
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444444;
+/* Universal selector */
+
+* {
+  /* border-top: 10px solid #1098ad; */
 }
 
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+}
+
+/*List selector */
 h1,
 h2,
 h3 {
@@ -214,5 +217,54 @@ RESOLVING CONFLICTING DECLARATION
 3 - Element selector (p,div,li,etc.)
 4 - Universal Selector (*)
 
+*/
+
+/* RESOLVING CONFLICTS*/
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: greenyellow;
+}
+
+/* Inheritance and the Universal selector 
+HOW INHERITANCE WORKS                                             
+                                                                        (This body is the parent element , it applies it's properties to nav , h1 and p in the following example . Not all the 
+                                                                         properties get inherited . It's mostly ones related to text : font-family , font-size , font-weight , font-style , color , 
+                                                                         line-height , letter-spacing , text-align , text-transform , text-shadow , list-style , etc .
+
+<body>                                                                  body{
+                                                                          color:#444444;
+<nav>                                                                     font-size:16px;
+  This is the navigation                                                  font-family: sans-serif;
+</nav>                                                    
+                                                                          border-top: 10px solid #1098ad; (the border property does not get inherited 
+<h1>My website</h>                                                       }
+                              
+<p>                                                                     (h1 overriding inherited styles)
+                                                                        
+  the text is the paragraph is completely irrelevant                    h1{
+                                                                         color:#1098ad;
+</p>                                                                     font-size: 32px;
+                                                                         text-transform: uppercase;
+</body>                                                                 }
 
 */
+
+/* nav a:link,
+nav p{
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
