@@ -2,6 +2,8 @@
 
 * {
   /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,6 +11,39 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+}
+
+.main-header {
+  /* background-color: #f7f7f7;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  /* Padding : 50px 0 (the first value is for top and bottom and the second value is for left and right )  */
+  padding: 50px 0;
+  width: 500px;
 }
 
 /*List selector */
@@ -27,10 +62,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -42,10 +80,18 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /* descendant selector */
@@ -113,16 +159,6 @@ there are 256 pure grays to choose from
 rgb(69,69,69) / #444444 / #444
 rgb(183,183,183) / #b7b7b7
 */
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
 
 body {
   /* background-color: bisque; */
@@ -263,8 +299,50 @@ HOW INHERITANCE WORKS
 /* nav a:link,
 nav p{
   font-size: 18px;
-} */
+} 
 
 nav {
   font-size: 18px;
 }
+
+*/
+
+/* THE CSS BOX MODEL
+       
+
+       ----------------------------------------------------
+       -                                                  -
+       -                               Margin             -
+       -    ________________________________________      -                                        -
+       -    -                                      -      -
+       -    -                   Padding            -      -
+       -    -      ___________________________     -      -                            -
+       -    -      -       Width             -     -      -
+       -    -      -                         -     -      -
+       -    -      -                         -     -      -
+       -    -      -                  Height -     -      -
+       -    -      -                         -     -      -
+       -    -      - CONTENT                 -     -      -
+       -    -      -__________________________     -      -                          -
+       -    -                                      -      -
+       -    -                        Border        -      -
+       -    ________________________________________      -                                        -
+       -                                                  -
+       -                                                  -
+       ----------------------------------------------------
+
+
+
+- CONTENT : Text , Images , etc . , 
+- BORDER : Aline around the element , still inside of the element
+- PADDING : Invisible space around the content , inside of the element
+- MARIGN : Space outside of the element , between elements 
+- FILL AREA : Area tha gets filled with background color or background image
+
+ELEMENT HEIGHT AND WIDTH CALCULATION 
+- FINAL ELEMENT WIDTH = Left border + left paddding + width + right padding + right border
+- FINAL ELEMENT HEIGHT = Top border + top padding + height + bottom padding + bottom border 
+
+We can specify all these values using CSS properties 
+
+*/
