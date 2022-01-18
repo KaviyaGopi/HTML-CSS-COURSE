@@ -13,6 +13,13 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   /* background-color: #f7f7f7;
   padding: 20px;
@@ -346,3 +353,8 @@ ELEMENT HEIGHT AND WIDTH CALCULATION
 We can specify all these values using CSS properties 
 
 */
+
+.post-img {
+  width: 800px;
+  height: auto;
+}
