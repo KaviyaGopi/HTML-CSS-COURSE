@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
+
 body {
   color: #444;
   font-family: sans-serif;
@@ -53,6 +55,7 @@ aside {
   width: 500px;
 }
 
+/* SMALLER ELEMENTS */
 /*List selector */
 h1,
 h2,
@@ -88,6 +91,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -99,6 +103,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  display: inline;
 }
 
 /* descendant selector */
@@ -358,3 +363,60 @@ We can specify all these values using CSS properties
   width: 800px;
   height: auto;
 }
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* 
+BLOCK-LEVEL ELEMENTS
+
+-Elements are formatted visually as blocks
+-Elements occupy 100% of parent element's width, no matter the content 
+-Elelments are stacked vertically by default , one after another
+-the box-model applies as showed earlier 
+
+Default elements: body , main , header , footer , section , nav , aside , div , h1-h6 , 
+p , ul , ol , li , etc . . . 
+
+With CSS : display : block
+
+
+INLINE ELEMENT
+-Occupies only the space necessary for it's content
+-Caused no line-break after or before the element
+-Box model applies in a different way:heights and widths do not apply
+-Paddings and margins are applied only horizontally (left and right)
+
+Default elements : a , img  ,strong , em , button , etc .
+with CSS : display : inline
+
+SUMMARY : INLINE , BLOCK-LEAVEL AND INLINE-BLOCK BOXES
+
+BLOCK-LEAVEL BOXES
+-Element formatted visually as blocks
+-100% of parent's width
+-Vertically , one after another
+-box-model applies as showed
+
+INLINE-BLOCK BOXES
+-Looks like inline from the outside, behaves like block-leavel on the inside
+-Occupies only content's space
+-Causes no line-breaks
+-Box-model applies as showed
+display :inline-block
+
+INLINE BOXES
+-Occupies only content's space
+-Causes no line-breaks
+-Box model is different : heights and widths do not apply 
+-Paddings and margins only horizontal (left and right)
+*/
