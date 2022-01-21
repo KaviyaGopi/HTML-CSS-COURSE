@@ -172,9 +172,9 @@ rgb(69,69,69) / #444444 / #444
 rgb(183,183,183) / #b7b7b7
 */
 
-body {
-  /* background-color: bisque; */
-}
+/* body {
+  background-color: bisque;
+} */
 
 /* .first-li {
   font-weight: bold;
@@ -189,9 +189,9 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(2) {
-  /* color: red; */
-}
+/* li:nth-child(2) {
+  color: red;
+} */
 
 /* Pseudo classes using descendant selector 
    Misconception: This wont work 
@@ -362,6 +362,7 @@ We can specify all these values using CSS properties
 .post-img {
   width: 800px;
   height: auto;
+  margin: 100px;
 }
 
 nav a:link {
@@ -374,6 +375,10 @@ nav a:link {
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* 
@@ -392,14 +397,14 @@ With CSS : display : block
 
 INLINE ELEMENT
 -Occupies only the space necessary for it's content
--Caused no line-break after or before the element
--Box model applies in a different way:heights and widths do not apply
--Paddings and margins are applied only horizontally (left and right)
+-Caused no line-break afed only horizontally (left and right)
 
 Default elements : a , img  ,strong , em , button , etc .
 with CSS : display : inline
 
-SUMMARY : INLINE , BLOCK-LEAVEL AND INLINE-BLOCK BOXES
+SUMMARY : INLINE , BLter or before the element
+-Box model applies in a different way:heights and widths do not apply
+-Paddings and margins are appliOCK-LEAVEL AND INLINE-BLOCK BOXES
 
 BLOCK-LEAVEL BOXES
 -Element formatted visually as blocks
@@ -420,3 +425,7 @@ INLINE BOXES
 -Box model is different : heights and widths do not apply 
 -Paddings and margins only horizontal (left and right)
 */
+
+/* NORMAL FLOW Vs. ABSOLUTE POSITIONING 
+
+NORMAL FLOW  */
