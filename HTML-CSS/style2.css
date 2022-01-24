@@ -19,17 +19,43 @@
   text-transform: uppercase;
 }
 
+article {
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* background-color: blue; */
+}
+
+.continer {
+  position: relative;
+  overflow: hidden;
+}
+
 .sale {
   background-color: red;
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 7px 15px;
+  padding: 7px 38px;
   display: inline-block;
   position: absolute;
-  top: 28px;
-  left: 200px;
+  top: 0px;
+  left: -26px;
+  transform: rotate(-45deg);
+}
+
+.sale--2 p {
+  background-color: aqua;
+  display: inline-block;
+  padding: 8px 70px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: -56px;
+  transform: rotate(45deg);
 }
 
 .color {
@@ -94,3 +120,28 @@ h1 {
   background-color: #f7f7ff;
   padding: 15px;
 }
+
+/* .circle {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgba(214, 8, 8, 0.616);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle::after {
+  content: "";
+  background-color: rgba(226, 67, 9, 0.589);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1s all;
+}
+
+.circle:hover::after {
+  background-color: tan;
+} */
