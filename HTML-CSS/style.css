@@ -486,3 +486,43 @@ ABSOLUTE POSITIONING
 
 position : absolute
 */
+
+/* LAYOUT *
+-Layout is the way text , Images and other content is placed and arranged on a webpage
+-Layout gives the page a visual structure , into which we place our aontent
+-Building a layout : Arranging page elements into a visual structure , instead of simply having them placed one after another (normal flow)
+
+1. FLOAT LAYOUTS
+The only way of bulding layouts of all sizes, using the float CSS property . still used , but getting outdate fast .
+
+2.FLEXBOX
+Modern way of laying out elements in a 1-dimensional row without using floats . perfect for component layouts 
+
+3. CSS GRID
+For laying out element in a fully-fledged 2-dimensional grid . Perfect for page layouts andn complex components 
+/
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 100px; */
+  padding-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+h2 {
+  float: right;
+}
+
+nav {
+  float: right;
+}
