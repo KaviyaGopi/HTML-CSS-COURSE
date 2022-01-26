@@ -1,19 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  /* font-family: sans-serif; */
   box-sizing: border-box;
 }
 
 body {
-  color: #000;
+  color: black;
+  background-color: rgba(240, 127, 61, 0.884);
 }
 
 .nav-right {
-  color: red;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 10px;
+  gap: 50px;
+  margin-right: 100px;
+  /* margin: 10px; */
 }
 
 .btn {
@@ -42,4 +44,73 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: antiquewhite;
+}
+
+.continer {
+  /* margin-top: 50px; */
+  display: inline-block;
+  /* position: absolute; */
+}
+
+.about-title {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(126, 49, 19);
+  top: 12rem;
+  display: flex;
+  padding-left: 50rem;
+}
+
+.about-name {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 20px;
+  top: 13rem;
+  display: flex;
+  padding-left: 50rem;
+}
+
+.about-para {
+  padding: 10px;
+  text-align: left;
+  /* margin-top: 40px; */
+  /* display: block; */
+  /* padding-top: 50px; */
+  top: 15rem;
+  display: flex;
+  padding-left: 50rem;
+  position: relative;
+  font-family: sans-serif;
+  font-size: large;
+  display: inline-block;
+}
+
+.image-dp img {
+  margin: 20px;
+  border-radius: 180px;
+  padding: 10px;
+  margin-left: 188px;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.skills {
+  margin-top: 105px;
+  background-color: antiquewhite;
+}
+.skills-para {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  font-size: large;
+  font-family: sans-serif;
+  top: 8rem;
+}
+
+.skills-img {
+  position: relative;
+  bottom: 5rem;
+  display: flex;
+  padding-left: 50rem;
 }

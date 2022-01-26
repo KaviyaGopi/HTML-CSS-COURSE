@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  /* width: 800px; */
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -30,6 +30,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  background-color: red;
   /*height: 80px;*/
 }
 
@@ -525,4 +526,8 @@ h2 {
 
 nav {
   float: right;
+}
+
+.clear {
+  clear: both;
 }
