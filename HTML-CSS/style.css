@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  /* width: 800px; */
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -30,7 +30,6 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  background-color: red;
   /*height: 80px;*/
 }
 
@@ -412,7 +411,7 @@ h1::first-letter {
   color: red;
 } */
 
-h1::after {
+h2::after {
   content: "TOP";
   background-color: #ffe70e;
   color: #444;
@@ -420,9 +419,9 @@ h1::after {
   font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
-  position: absolute;
-  top: -10;
-  right: -25px;
+  position: relative;
+  top: -15px;
+  right: -45rem;
 }
 
 /* 
@@ -510,7 +509,6 @@ For laying out element in a fully-fledged 2-dimensional grid . Perfect for page 
 }
 
 .author {
-  /* padding-left: 100px; */
   padding-top: 10px;
   margin-left: 20px;
   float: left;
@@ -520,14 +518,37 @@ h1 {
   float: left;
 }
 
-h2 {
-  float: right;
-}
+/* h2 {
+  float: left;
+} */
 
 nav {
   float: right;
 }
 
 .clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: yellow; */
   clear: both;
 }
