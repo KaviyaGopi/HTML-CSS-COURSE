@@ -4,6 +4,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -54,8 +55,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   /* Padding : 50px 0 (the first value is for top and bottom and the second value is for left and right )  */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -87,6 +87,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -149,6 +150,7 @@ article header p {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* 
@@ -552,3 +554,34 @@ footer {
   /* background-color: yellow; */
   clear: both;
 }
+
+/* 
+THE BOX MODEL WITH BOX-SIZING : BORDER-BOX
+
+       ----------------------------------------------------
+       -                                                  -
+       -                               Margin             -
+       -    ________________________________________      -
+       -    -                                      -      -
+       -    -                   Padding            -      -
+       -    -      ___________________________     -      -
+       -    -      -       Width             -     -      -
+       -    -      -                         -     -      -
+       -    -      -                         -     -      -        ------------->
+       -    -      -       CONTENT    Height -     -      -   box - sizing : border-box
+       -    -      -                         -     -      -
+       -    -      -                         -     -      -
+       -    -      -__________________________     -      -
+       -    -                                      -      -
+       -    -                        Border        -      -
+       -    ________________________________________      -
+       -                                                  -
+       -                                                  -
+       ----------------------------------------------------
+
+Final element width = right border + right padding + width + left padding + left border
+
+Final element height = top border + top padding + height + bottom padding + bottom border       
+
+
+*/

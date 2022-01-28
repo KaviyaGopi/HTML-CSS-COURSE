@@ -1,6 +1,7 @@
 * {
   font-family: sans-serif;
   width: auto 0;
+  box-sizing: border-box;
 }
 .continer {
   width: 825px;
@@ -17,12 +18,6 @@
 
 .shipping {
   text-transform: uppercase;
-}
-
-article {
-  /* position: relative; */
-  /* overflow: hidden; */
-  /* background-color: blue; */
 }
 
 .continer {
@@ -90,6 +85,10 @@ article {
 .product {
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.product-details {
+  display: inline-block;
 }
 
 .price {
