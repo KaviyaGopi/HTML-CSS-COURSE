@@ -583,5 +583,40 @@ Final element width = right border + right padding + width + left padding + left
 
 Final element height = top border + top padding + height + bottom padding + bottom border       
 
+What is FLEXBOX?
+-Flex box is a set of related css properties for building 1-dimensional layouts
+-The main idea behind flexbox is that empty space inside a continer element can be automatically divided by it's child elements
+-Flexbox makes it easy to automatically align items to one another inside a parent container , both horizontally and  vertically 
+-Flexbox solves common problems such as vertical centering and creating equal-height columns
+-Flexbox is perfect for replacing floats , allowing us to write fewer and cleaner HTMA and css code 
+
+FLEXBOX TERMINOLOGY 
+display: flex;
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+|                                                                                                              |                                                                                                           |
+|                                          Flext Continer                                                      |                                       Flex Items                                                          |
+|______________________________________________________________________________________________________________|___________________________________________________________________________________________________________|                                                                                               |
+|                                                                                                              |   1 . align-self: auto | stretch | flex-start | flex-end | center | baseline                              |
+|   1 . gap: 0 | <length>                                                                                      |   - To overwrite align-items for individual flex items                                                    |
+|   - To create space between items , without using margin                                                     |                                                                                                           |
+|                                                                                                              |   2 . fkex-grow: 0 | <integer>                                                                            |
+|   2 . justify-content: flex-start | flex-enf | center | space-between | space-around | space-evenly          |   - To allow an element to grow ( 0 means no , 1+ means yes )                                             |
+|   - To align items along main axis (horizontally , by default)                                               |                                                                                                           |
+|                                                                                                              |   3 . flex-shrink: 1 | <integer>                                                                          |
+|   3 . align-items: stretch | flext-start | flex-end | center | baseline                                      |   - To allow an element to shrink ( 0 menas no , 1+ means yes )                                           |
+|   - To align items along cross axis (vertically , by default)                                                |                                                                                                           |
+|                                                                                                              |   4 . flex-basis: auto | <length>                                                                         |
+|   4 . flext-direction: row | roe-reverse | column | column-reverse                                           |   - To define an item's width , instead of the width property                                             |
+|   - to define which is the main axis                                                                         |                                                                                                           |
+|                                                                                                              |   5 . flex: 0 1 auto | <int> <int> <len>                                                                  |
+|   5 . flex-weap: nowrap | wrap | wrap-reverse                                                                |   - Recommended shorthand for flex-grow , -shrink , -basis.                                               |
+|   - To allow items to wrap into a new line if they are too large                                             |                                                                                                           |
+|                                                                                                              |   6 . order: 0 | <integer>                                                                                |
+|   6 . align-content: stretch | flex-start | flex-end | center | space-between | space-around                 |   - Controls order of items. -1 makes item first , 2 makes it last                                        |
+|   - Only applies when there are multiple lines ( flex-wrap:wrap)                                             |                                                                                                           |
+|                                                                                                              |                                                                                                           |
+|______________________________________________________________________________________________________________|___________________________________________________________________________________________________________|
+
 
 */
