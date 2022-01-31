@@ -36,13 +36,22 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 200px 200px 100px 100px;
+        grid-template-rows: 300px 200px;
+
+        gap: 30px;
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
+        display: none;
+
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -78,3 +87,41 @@
     </div>
   </body>
 </html>
+
+<!-- 
+CSS GRID
+
+-CSS grid is a set of css properties for building 2-dimensional layouts
+-The main idea behind css Grid is that we divide a container element into rows and columns that can be filled with its child elements
+-In two-dimensional contexts , css Grid allows us to write less nested HTML and easier-to-read css
+-css Grid is not meant to replace flexbox! Instead , they work perfectly together . Need a 1D layout? Use flexbox . Need a 2D layout ? use css Grid
+
+BASIC CSS GRID TERMINOLOGY : display: grid;
+
+
+_____________________________________________________________________________________________________________________________________________________________
+|                                                                                |                                                                          |
+|                             GRID CONTINER                                      |                                GRID ITEMS                                |
+|________________________________________________________________________________|__________________________________________________________________________|
+|   1 . grid-template-rows: <track size>*                                        |   1 . grid-column: <start line> / <end line> | span <number>             |
+|       grid-template-columns: <track size>*                                     |       grid-row: <start line> / <end line> | span <number>                |       
+|   - To establish the grid row and column tracks . One length unit              |   - To place a grid item into a specific cell , based  on line numbers.  |
+|     for each track . Any unit can be used , new fr fills unused space          |     span keyword can be used  to span an item accross more cells         |
+|                                                                                |                                                                          |
+|   2 . row-gap: 0 | <length>                                                    |   2 . justify-self: stretch: stretch | start | center | end              |
+|                                      gap: 0 | <length>                         |       align-self: stretch | start | center | end                         |
+|       column-gap: 0 | <length>                                                 |   - To overwrite justify-items/align-items for single items for single   |
+|   - To create empty space between tracks                                       |     items                                                                |
+|                                                                                |                                                                          |
+|   3 . justify-items: stretch | start | center | end                            |                                                                          |
+|       align-items: stretch | start | center | end                              |                                                                          |
+|   - To align items inside rows / columns (horizontally/vertically)             |                                                                          |
+|                                                                                |                                                                          |
+|   4 . justify-content: start | start | center | end | . . .                    |                                                                          |
+|       align-content: start | start | center v end | . . .                      |                                                                          |
+|   - To align entire grid  inside frid continer . Only applies if               |                                                                          |
+|     container is large than the grid                                           |                                                                          |
+|                                                                                |                                                                          |
+|________________________________________________________________________________|__________________________________________________________________________|
+
+-->
