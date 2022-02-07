@@ -46,72 +46,14 @@ header {
   background-color: antiquewhite;
 }
 
-.continer {
-  /* margin-top: 50px; */
-  display: inline-block;
-  /* position: absolute; */
-}
-
-.about-title {
-  position: relative;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgb(126, 49, 19);
-  top: 12rem;
-  display: flex;
-  padding-left: 50rem;
-}
-
-.about-name {
-  position: relative;
+.about-me {
   font-family: sans-serif;
-  font-size: 20px;
-  top: 13rem;
   display: flex;
-  padding-left: 50rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* margin: 0 auto; */
 }
 
-.about-para {
-  padding: 10px;
-  text-align: left;
-  /* margin-top: 40px; */
-  /* display: block; */
-  /* padding-top: 50px; */
-  top: 15rem;
-  display: flex;
-  padding-left: 50rem;
-  position: relative;
-  font-family: sans-serif;
-  font-size: large;
-  display: inline-block;
-}
-
-.image-dp img {
-  margin: 20px;
-  border-radius: 180px;
-  padding: 10px;
-  margin-left: 188px;
-  margin-right: auto;
-  display: inline-block;
-}
-
-.skills {
-  margin-top: 105px;
-  background-color: antiquewhite;
-}
-
-.skills-para {
-  position: relative;
-  text-align: left;
-  padding: 20px;
-  font-size: large;
-  font-family: sans-serif;
-  top: 8rem;
-}
-
-.skills-img {
-  position: relative;
-  bottom: 5rem;
-  display: flex;
-  padding-left: 50rem;
+.img-container {
 }
