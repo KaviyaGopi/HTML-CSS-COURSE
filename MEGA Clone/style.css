@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: darkgoldenrod; */
+}
+
+.logo-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-image {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.button-logo-text-container {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inherit;
+  border: 2px #c5c3c3 solid;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-logo-text-container:hover {
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+.glob-image {
+  width: 30px;
+  height: 30px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.language {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.nav-right span {
+  color: #c5c3c3;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sign-in--button {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #f04139;
+  color: #f4f4f4;
+
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 2px rgba(1, 1, 1, 0.05);
+}
+
+.sign-in--button:hover {
+  background-color: #f04239d8;
+}
+
+.log-in--button {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  color: #000000;
+  border: 2px #c5c3c3 solid;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 2px rgba(1, 1, 1, 0.05);
+}
+
+.log-in--button:hover {
+  background-color: #dddddd;
+}
