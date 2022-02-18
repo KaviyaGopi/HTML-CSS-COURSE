@@ -103,11 +103,12 @@ body {
 
 .three-dots {
   font-size: 25px;
+  color: #000000;
 }
 
 .header-bottom ul {
   display: flex;
-  gap: 40px;
+  gap: 70px;
   justify-content: center;
   list-style-type: none;
 }
@@ -115,4 +116,48 @@ body {
 .header-bottom ul a {
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 10rem;
+  /* gap: 30px; */
+}
+
+.text-container h1 {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.text-container span {
+  font-family: montserrat;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 44px;
+}
+
+.create-account--button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00ac97;
+  padding: 15px 22px;
+  margin-top: 44px;
+  font-family: Montserrat;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.create-account--button:hover {
+  background-color: #f04139;
 }
