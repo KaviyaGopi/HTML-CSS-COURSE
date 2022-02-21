@@ -237,8 +237,9 @@ body {
 .section-container--3 {
   padding-top: 15rem;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  position: relative;
+  /* /* align-items: center; */
+  justify-content: center;
   gap: 12rem;
 }
 
@@ -271,9 +272,6 @@ body {
   text-align: center;
 }
 
-.background-image-container--3 {
-  padding-left: 15rem;
-}
 .file-image--3 {
   position: absolute;
   width: 1100px;
