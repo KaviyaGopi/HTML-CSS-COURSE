@@ -330,3 +330,48 @@ body {
   width: 45rem;
   height: 60%;
 }
+
+/* PAGE--5 */
+
+.section-container--5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+  /* padding-top: 40rem; */
+}
+
+.background-image--5 {
+  width: 45rem;
+  height: 50%;
+}
+
+.text-container--5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-container--5 h2 {
+  letter-spacing: 1px;
+  font-weight: 300;
+
+  font-family: montserrat;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.7;
+}
+
+.text-container--5 p {
+  font-family: montserrat;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #5d5d5d;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.learn-more--5 {
+  color: #00ac97;
+}
